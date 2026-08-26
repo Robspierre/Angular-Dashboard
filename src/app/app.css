@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+}
+
+.content {
+  margin-left: 240px;
+
+  padding: 30px;
+
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
