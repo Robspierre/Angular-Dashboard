@@ -1,0 +1,1 @@
+import{Ka as a,Xa as n,Ya as m,jb as o}from"./chunk-K3G23BZT.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-team"]],decls:2,vars:0,template:function(e,p){e&1&&(n(0,"p"),o(1,"team works!"),m())},encapsulation:2})};export{i as TeamPage};
