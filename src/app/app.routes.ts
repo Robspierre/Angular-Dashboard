@@ -10,5 +10,9 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardPage
-  }
+  },
+   {
+    path: 'team',
+    loadComponent: () => import('./team/team').then(m => m.TeamPage)
+   }
 ];

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header';
 import { SidebarComponent } from './sidebar/sidebar';
+// import {RouterLink} from '@angular/router';
+import { provideRouter, RouterOutlet, RouterLink, withHashLocation } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

@@ -16,12 +16,17 @@
 
     <span class="section-title">Menu</span>
 
-    <a href="#" class="sidebar-link">
+    <a 
+    routerLink="/dashboard" 
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    routerLinkActive="selected"
+    class="sidebar-link">
       <mat-icon>dashboard</mat-icon>
       Pit Wall
     </a>
 
-    <a href="#" class="sidebar-link">
+    <a routerLink="/team" routerLinkActive="active" class="sidebar-link">
       <mat-icon>groups</mat-icon>
       My Team
     </a>
