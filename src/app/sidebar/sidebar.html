@@ -21,32 +21,44 @@
     routerLinkActive="active"
     [routerLinkActiveOptions]="{ exact: true }"
     routerLinkActive="selected"
-    class="sidebar-link">
+    class="sidebar-link"
+    (click)="closeSidebar()">
       <mat-icon>dashboard</mat-icon>
       Pit Wall
     </a>
 
-    <a routerLink="/team" routerLinkActive="active" class="sidebar-link">
+    <a 
+    routerLink="/team" 
+    routerLinkActive="active" 
+    class="sidebar-link"
+    (click)="closeSidebar()">
       <mat-icon>groups</mat-icon>
       My Team
     </a>
 
-    <a href="#" class="sidebar-link">
+    <a 
+    href="#" 
+    class="sidebar-link"
+    (click)="closeSidebar()">
       <mat-icon>psychology</mat-icon>
       Predictions
     </a>
 
-    <a href="#" class="sidebar-link">
+    <a 
+    routerLink="/standings" 
+    routerLinkActive="active" 
+    class="sidebar-link"
+    (click)="closeSidebar()">
       <mat-icon>leaderboard</mat-icon>
       League Table
     </a>
 
-    <a href="#" class="sidebar-link">
+    <a href="#" class="sidebar-link" (click)="closeSidebar()">
       <mat-icon>emoji_events</mat-icon>
       Championship Standings
     </a>
 
-    <a href="#" class="sidebar-link">
+    <a href="#" class="sidebar-link" (click)="closeSidebar()">
       <mat-icon>flag</mat-icon>
       Race Results
     </a>
@@ -54,17 +66,17 @@
     <div class="sidebar-section">
       <span class="section-title">Settings</span>
 
-      <a href="#" class="sidebar-link">
+      <a href="#" class="sidebar-link" (click)="closeSidebar()">
         <mat-icon>menu_book</mat-icon>
         Game Guide
       </a>
 
-  <a href="#" class="sidebar-link">
+  <a href="#" class="sidebar-link" (click)="closeSidebar()">
     <mat-icon>calendar_month</mat-icon>
     Race Calendar
   </a>
 
-  <a href="#" class="sidebar-link">
+  <a href="#" class="sidebar-link" (click)="closeSidebar()">
     <mat-icon>settings</mat-icon>
     Settings
   </a>

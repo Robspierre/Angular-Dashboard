@@ -24,6 +24,27 @@
   gap: 30px;
 }
 
+.login-button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.login-button:hover {
+  background: #1d4ed8;
+}
+
+.login-button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
 .menu-toggle {
   display: none;
 

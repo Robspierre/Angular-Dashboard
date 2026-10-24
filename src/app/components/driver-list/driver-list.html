@@ -1,0 +1,41 @@
+<h2>F1 Drivers</h2>
+
+<input
+  type="text"
+  placeholder="Search drivers..."
+  #search
+  (input)="updateSearch(search.value)"
+/>
+
+@if (loading()) {
+  <p>Loading drivers...</p>
+} @else if (error()) {
+  <p>{{ error() }}</p>
+  <button (click)="loadDrivers()">Retry</button>
+} @else {
+  @for (driver of filteredDrivers(); track driver.id) {
+    <div class="driver-card">
+      <h3>{{ driver.name }}</h3>
+      <p>Team: {{ driver.team }}</p>
+      <p>Price: {{ driver.price }} credits</p>
+    </div>
+  } @empty {
+    <p>No drivers found.</p>
+  }
+}
+
+<h2>My Fantasy Team</h2>
+
+<p>Budget: {{ budget() }} credits</p>
+<p>Total Cost: {{ totalCost() }} credits</p>
+<p>Remaining: {{ remainingBudget() }} credits</p>
+
+@for (driver of selectedDrivers(); track driver.id) {
+  <div>
+    {{ driver.name }} - {{ driver.price }} credits
+
+    <button (click)="removeDriver(driver.id)">
+      Remove
+    </button>
+  </div>
+}
